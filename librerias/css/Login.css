@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TW Cen MT";
+  src: url("../fuentes/Tw Cen MT.woff");
+}
+
+body {
+  background-image: url(../imagenes/FondoLogin.jpg);
+  background-size: 100%;
+}
+
+.Titulo {
+  color: white;
+  font-family: Tw Cen MT;
+  font-size: 42px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 107px;
+  text-align: center;
+}
+
+/*Estilos Formulario*/
+
+.HR1 {
+  margin: auto;
+  margin-top: 34px;
+  width: 35%;
+}
+
+.Login {
+  bottom: 0;
+  box-shadow: 0px 0px 60px black;
+  border-radius: 10px;
+  height: 300px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 127px;
+  right: 0;
+  width: 30%;
+}
+
+    .Container {
+      padding-top: 40px;
+      text-align: center;
+    }
+
+        .usuario {
+          border-color: black;          
+          background-image: url(../imagenes/Login.png);
+          background-position: 5px center;
+          box-shadow: 1px 1px 10px 1px black;
+          background-repeat: no-repeat;
+          font-family: Tw Cen MT;
+          font-weight: bold;
+          font-size: 20px;
+          font-style: italic;
+          height: 40px;
+          padding-left: 45px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .usuario:focus {
+          outline: none;
+          width: 75%;
+        }
+
+        .password {
+          border-color: black;
+          background-image: url(../imagenes/Pass.png);
+          background-position: 5px center;
+          background-repeat: no-repeat;
+          box-shadow: 1px 1px 10px 1px black;
+          font-family: Tw Cen MT;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold;
+          height: 40px;
+          margin-top: 20px;
+          padding-left: 45px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .password:focus {
+          outline: none;
+          width: 75%;
+        }
+
+        #change {
+          height: 32px;
+          position: absolute;
+          top: 105px;
+          right: 67px;
+          width: 32px;
+        }
+
+        #change.eye {
+          background: url("../imagenes/eye1.png");
+          background-size: cover;
+        }
+
+        #change.eye2 {
+          background: url("../imagenes/eye2.png");
+          background-size: cover;
+        }
+
+    .btn-submit {
+      background-color: #D5D8DC;
+      border-color: black;
+      box-shadow: 1px 1px 10px 1px black;
+      border-radius: 3px 3px 3px 3px;
+      cursor: pointer;
+      font-family: Tw Cen MT;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+      height: 35px;
+      margin-top: 28px;
+      transition: all .3s ease;
+      width: 70%;
+    }
+
+    .btn-submit:hover {
+      background-color: #eceff1;
+    } 
+
+    .btn-submit:focus {
+      outline: none;
+    }
+
+  .Texto {
+    color: #0E0E0E;
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 12px;
+    text-align: center;
+  } 
+
+  .Texto2 {
+    font-family: Tw Cen MT;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+    .Texto2 > a {
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .3s ease;
+    }
+
+    .Texto2 a:hover {
+        color: #333;
+    }
+
+/*Fin Estilos Formulario*/
+
+

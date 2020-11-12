@@ -1,0 +1,339 @@
+@media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	@font-face {
+	  font-family: "TW Cen MT";
+	  src: url("../fuentes/Tw Cen MT.woff");
+	}
+
+	.FondoHeader {
+		height: 250px;
+	}
+
+	.Logo {
+		margin-left: 70px;
+		position: relative;
+	}
+
+	.Logo img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.Nombre {
+		margin-left: 120px;
+		font-size: 24px;
+		margin-top: -1%;
+	}
+
+	.BarraH {
+		margin-left: 0;
+		margin-top: 6px;
+		width: 30%;
+		font-size: 22px;
+ 	}
+
+ 	.menu {
+ 		height: 20px;
+ 	}
+
+	.menu li {
+
+	}
+
+	.menu li:before {
+		background: none;
+	}
+
+	.menu2 {
+		background: none;
+	}
+	
+	.menu2 li {
+		border-bottom: 0px;
+		font-size: 20px;
+		position: relative;
+		margin-left: 20px;
+		margin-top: 0px;
+	}
+
+	.menu2 li:before {
+		background: none;
+	}
+
+	.Log {
+		margin-left: -22%;
+		margin-top: 140%;
+		position: absolute;
+		z-index: 10;
+		width: 400%;
+	}
+
+	.Log .M1 {
+		font-size: 22px;
+	}
+
+	.Usuario {
+		font-size: 22px;
+		margin-top: 0px;
+		margin-left: 0;
+		position: relative;
+		width: 204%;
+	}
+
+	#sidebar {
+		position: fixed;
+		width: 220px;
+		height: 200%;
+		background: #00b0dd;
+		left: -220px;
+		transition: all 300ms linear;
+		top: 0px;
+		z-index: 100;
+	}
+
+	#sidebar.active {
+	  	left: 0px;
+	}
+
+	#sidebar ul li {
+	  	color: rgba(230, 230, 230, 0.9);
+	  	list-style: none;
+	  	padding: 6px 0px;
+	}
+
+	#sidebar .toggle-btn {
+	  	position: absolute;
+	  	left: 240px;
+	  	top: 20px;
+	}
+
+	#sidebar .toggle-btn span {
+	  	display: block;
+	  	width: 30px;
+	  	height: 2px;
+	  	background: #fff;
+	  	margin: 8px 0px;
+	}
+
+	article {
+		height: max-content;
+	}
+
+	.S1 {
+		height: max-content;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+	}
+
+	.Titulo {
+		font-size: 18px;
+		margin-top: 4%;
+		position: relative;
+		line-height: 24px;
+	}
+
+	.IMG1 {
+		margin-top: 6%;
+		height: 200px;
+		position: relative;
+		width: 100%;
+	}
+
+	.P1 {
+		font-size: 16px;
+		line-height: 24px;
+		margin-top: 6%;
+		position: relative;
+		width: 100%;
+		line-height: 26px;
+	}
+
+	.S2 {
+		height: max-content;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 4%;
+		position: relative;
+		padding-top: 8%;
+		float: left;
+		width: 100%;
+		padding-bottom: 12%;
+	}
+
+	.Titulo2 {
+		font-size: 22px;
+	}
+
+	.Contenedor {
+		display: block;
+		padding-top: 0%;
+	}
+
+	.Contenedor2 {
+		display: block;
+	}
+
+	.CajaI {
+		display: none;
+	}
+	
+	.Caja1 {
+		height: max-content;
+		margin-left: 0;
+		padding: 15px 45px;
+		width: 100%;
+		float: left;
+		position: relative;
+		margin-top: 8%;
+	}
+
+	.Caja1:hover {
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.43);
+		transform: translate3d(0,0,0);
+	}
+
+	.TituloC1 {
+		color: #4e5056;
+		font-family: TW Cen MT;
+		font-size: 12px;
+		font-weight: bold;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.TituloC1:before {
+		background: #00b0dd;
+		bottom: -30px;
+		content: "";
+		display: block;
+		height: 1px;
+		margin: auto;
+		position: relative;
+		width: 100%;
+	}
+
+	.TextoC1 {
+		line-height: 23px;
+		margin-top: 45px;
+		text-align: center;
+	}
+
+	.BotonC1 {
+		margin-top: 25px;
+		text-align: center;
+		padding-bottom: 10%;
+	}
+
+	.BotonC1 a {
+		background-position: 54px center;
+		font-size: 14px;
+	}
+
+	.BotonC1 a:hover {
+		background-position: 54px center;
+	}
+
+	.S3 {
+		height: max-content;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 4%;
+		position: relative;
+		float: left;
+	}
+
+	.S3 div {
+		font-size: 16px;
+		width: 100%;
+		line-height: 24px;
+		margin: 0px auto;
+	}
+
+	footer {
+		margin-top: 6%;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+		float: left;
+		height: 80px;
+		display: table;
+	}
+
+	.Nom {
+		font-size: 14px;
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+	.S1, .S2, .S3 {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.header-fixed {
+		background: #00b0dd;
+		box-shadow: 0 0 4px 4px grey;
+		height: 70px;
+		opacity: 0.9;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;	
+	}
+
+	.header-fixed .Logo {
+		margin-left: 60px;
+		padding-top: 11px;
+	}
+
+	.header-fixed .Logo img {
+		height: 50px;
+		width: 4.1%;
+	}
+
+	.header-fixed .Nombre {
+		font-size: 30px;
+		top: 18px;
+	}
+	
+	.header-fixed .BarraH {
+		font-size: 24px;
+		margin-top: -43px;
+	}
+
+	.header-fixed .Log {
+		margin-left: 55px;
+		top: 36px;
+		width: 51%;
+	}
+
+	.header-fixed .Log .M1 {
+		font-size: 29px;
+	}
+
+	.header-fixed .Usuario {
+		margin-left: 56px;
+	}
+
+	.header-fixed .Usuario span {
+		font-size: 26px;
+	}
+
+	.header-fixed .menu2 {
+		width: 100%;
+	}
+
+	.header-fixed .menu2 li {
+		font-size: 20px;
+	}
+}

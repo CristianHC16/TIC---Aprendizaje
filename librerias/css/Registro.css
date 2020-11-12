@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../imagenes/FondoRegistro.jpg);
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: "TW Cen MT";
+  src: url("../fuentes/Tw Cen MT.woff");
+}
+
+.Texto {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-left: 625px;
+  margin-top: 17px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+    .TextoA {
+      color: white;
+      font-family: Tw Cen MT; 
+      font-size: 54px;
+      font-style: italic;
+      font-weight: bold;
+      margin-left: 224px;
+      margin-top: 220px;
+      position: absolute;  
+    }
+
+    .TextoB {
+      color: #EEE;
+      font-family: Tw Cen MT;
+      font-size: 30px;
+      font-style: italic;
+      margin-left: 68px;
+      margin-top: 300px;
+      position: absolute;
+      text-align: center;
+      width: 66%;
+    }
+
+/*Estilos Formulario*/
+
+.Registro {
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 60px black;
+  bottom: 0;
+  height: 420px;
+  left: 0;
+  margin: auto;
+  margin-left: 112px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+}
+
+    .Container {
+      padding-top: 40px;
+      text-align: center;
+    }
+
+        .usuario {
+          background-image: url(../imagenes/Login.png);
+          background-position: 5px center;
+          background-repeat: no-repeat;
+          border-color: black;
+          box-shadow: 1px 1px 10px 1px black;
+          font-family: Tw Cen MT;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold;
+          height: 40px;
+          padding-left: 45px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .usuario:focus {
+          outline: none;
+          width: 75%;
+        }
+
+        .correo {
+          background-image: url(../imagenes/Email.png);
+          background-position: 5px center;
+          background-repeat: no-repeat;
+          border-color: black;
+          box-shadow: 1px 1px 10px 1px black;
+          font-family: Tw Cen MT;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold; 
+          height: 40px;
+          margin-top: 20px;
+          padding-left: 45px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .correo:focus {
+          outline: none;
+          width: 75%;
+        }
+
+        .password {
+          background-image: url(../imagenes/Pass.png);
+          background-position: 5px center;
+          background-repeat: no-repeat;
+          border-color: black;
+          box-shadow: 1px 1px 10px 1px black;
+          font-family: Tw Cen MT;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold;
+          height: 40px;
+          margin-top: 20px;
+          padding-left: 45px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .password:focus {
+          outline: none;
+          width: 75%;
+        }
+
+        #change {
+          height: 32px;
+          position: absolute;
+          right: 67px;
+          top: 225px;
+          width: 32px;
+        }
+
+        #change.eye {
+          background: url("../imagenes/eye1.png");
+          background-size: cover;
+        }
+
+        #change.eye2 {
+          background: url("../imagenes/eye2.png");
+          background-size: cover;
+        }
+
+        .btn-submit {
+          background-color: #D5D8DC; 
+          border-color: black;
+          border-radius: 3px 3px 3px 3px;
+          box-shadow: 1px 1px 10px 1px black; 
+          cursor: pointer;
+          font-family: Tw Cen MT;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bold;
+          height: 35px;
+          margin-top: 28px;
+          transition: all .3s ease;
+          width: 70%;
+        }
+
+        .btn-submit:hover {
+          background-color: #eceff1;
+        } 
+
+        .btn-submit:focus {
+          outline: none;
+        }
+
+    .Texto1 {
+      color: #0E0E0E;
+      font-family: Tw Cen MT;
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .Texto2 {
+      font-family: Tw Cen MT;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+        .Texto2 > a {
+          color: black;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all .3s ease;
+        }
+
+        .Texto2 a:hover {
+            color: #333;
+        }
+
+/*Fin Estilos Formulario*/
+

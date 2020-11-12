@@ -1,0 +1,665 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fuentes/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "TW Cen MT";
+	src: url("../fuentes/Tw Cen MT.woff");
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fuentes/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(../fuentes/MaterialIcons-Regular.woff2) format('woff2'),
+  url(../fuentes/MaterialIcons-Regular.woff) format('woff'),
+  url(../fuentes/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #00b0dd;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+::-webkit-scrollbar-button {
+      background-color: #00b0dd;
+}
+
+body {
+	background: white;
+}
+
+/*Estilos Header*/
+
+.FondoHeader {
+	background-image: url(../imagenes/C7.jpg);
+	background-size: cover;
+	clip-path: ellipse(90% 76% at 50% 20%);
+	height: 450px;
+	margin-top: -90px;
+}
+
+.header {
+	transition: all .6s ease;
+}
+
+	.Logo {
+		margin-left: 60px;
+		padding-top: 20px;
+		position: relative;
+		transition: all .6s ease;
+		z-index: 6;
+	}
+
+		.Logo img {
+			height: 55px;
+			width: 55px;
+		}
+
+	.Nombre {
+		color: white;
+		font-family: Tw Cen MT;
+		font-size: 35px;
+		font-style: italic;
+		font-weight: bold;
+		margin-left: 135px;
+		position: absolute;
+		text-shadow: 1px 2px 0px black, 1px 8px 5px #222;
+		top: 32px;
+		transition: all .6s ease;
+		z-index: 5;
+	}
+
+/*Fin Estilos Header*/
+
+/*Estilos BarraH*/
+
+	.BarraH {
+		margin-left: 700px;
+		margin-top: -45px;
+		position: absolute;
+		font-family: "Raleway";
+		font-size: 26px;
+		transition: all .6s ease;
+		width: 27%;
+		z-index: 10;
+	}
+
+		.menu li {
+			display: inline-block;
+			margin-left: 25px;
+			transition: all .4s ease;
+		}
+
+		.menu li:before {
+			background: #fff;
+			bottom: -35px;
+			content: "";
+			display: block;
+			height: 1.5px;
+			left: 50%;
+			position: relative;
+			transition: all .3s ease;
+			width: 0;
+		}
+
+		.menu li:hover:before {
+			left: 0;
+			width: 100%;
+		}
+
+			.menu li .M {
+				color: white;
+				text-decoration: none;
+				transition: all .4s ease;
+			}
+
+			.menu li .M:hover{
+				font-weight: bold;
+			}
+
+/*Fin Estilos BarraH*/
+
+/*Estilos Botón Log*/
+
+		.Usuario {
+			color: white;
+			cursor: pointer;
+			font-size: 28px;
+			margin-left: 38px;
+			margin-top: -26px;
+			position: absolute;
+			width: 43%;
+			z-index: 10;
+		}
+
+			.Usuario span:hover {
+				font-weight: bold;
+			}
+
+		.menu2 {
+			animation-duration: 1s;
+		  	animation-fill-mode: both;
+		  	animation-name: fadeInUsu;
+			background: rgba(0,0,0,0.7);
+			border-radius: 10px;
+			height: 125px;
+		  	position: absolute;
+		  	width: 107%;
+		}
+
+@keyframes fadeInUsu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+				.menu2 li {
+					font-size: 22px;
+					margin-left: 25px;
+					margin-top: 10px;
+				}
+
+				.menu2 .Tareas {
+					font-weight: bold;
+				}
+
+				.menu2 li:before {
+					background: none;
+				}
+
+					.menu2 li .M2 {
+						color: white;
+						display: block;
+						text-decoration: none;
+					}
+
+					.menu2 li .M2:hover {
+						font-weight: bold;
+					}
+
+					.BarraH li .menu2 {
+						display: none;
+					}
+
+					.BarraH .Usuario:hover > .menu2   {
+						display: block;
+					}
+
+/*Fin Estilos Botón Log*/
+
+/*Estilos Article*/
+
+article {
+	height: auto;
+	width: 100%;
+}
+
+	.S1 {
+		height: 470px;
+		padding-left: 130px;
+		padding-right: 130px;
+		width: 100%;
+	}
+
+		.Titulo1 {
+			color: #4e5056;
+			font-family: Tw Cen MT;
+			font-size: 32px;
+			font-weight: bold;
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		.IMG1 {
+			background-image: url(../imagenes/C9.jpg);
+			background-size: 100% 100%;
+			border: 2px solid black;
+			box-shadow: 0 0 10px 0 black;
+			float: left;
+			margin-top: 50px;
+			height: 340px;
+			width: 530px;
+		}
+
+		.P1 {
+			color: #424242;
+			font-family: Tw Cen MT;
+			font-size: 22px;
+			line-height: 33px;
+			float: right;
+			margin-top: 55px;
+			width: 43%;
+		}
+
+	.S2 {
+		background: #f4f5f9;
+		height: auto;
+		margin-top: 40px;
+		padding-bottom: 62px;
+		padding-top: 45px;
+		width: 100%;
+	}
+
+		.Titulo3 {
+			color: #4e5056;
+			font-family: Tw Cen MT;
+			font-size: 32px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.P2 {
+			color: #424242;
+			font-family: Tw Cen MT;
+			font-size: 22px;
+			line-height: 33px;
+			margin-top: 28px;
+			text-align: center;
+		}
+
+		.Contenedor {
+			display: inline-flex;
+			padding-left: 26px;
+			padding-top: 45px;
+			margin: auto;
+		}
+
+			.Caja1 {
+				background: #fff;
+				border-radius: 4px;
+				box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
+				height: auto;
+				margin-left: 40px;
+				padding: 25px 65px;
+				transition: all .3s;
+				width: 360px;
+			}
+
+			.Caja1:hover {
+				box-shadow: 0px 10px 32px -10px rgba(0, 0, 0, 0.7);
+				transform: translate3d(0,-5px,0);
+			}
+
+				.TituloC1 {
+					color: #4e5056;
+					font-family: TW Cen MT;
+					font-size: 17px;
+					font-weight: bold;
+					margin-top: 10px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+
+				.TituloC1:before {
+					background: #00b0dd;
+					bottom: -50px;
+					content: "";
+					display: block;
+					height: 1.5px;
+					margin: auto;
+					position: relative;
+					width: 100%;
+				}
+
+				.TextoC1 {
+					color: #424242;
+					font-family: TW Cen MT;
+					font-size: 18px;
+					line-height: 23px;
+					margin-top: 70px;
+					text-align: center;
+				}
+
+					.TextoC1 div {
+						margin-top: 5px;
+					}
+
+				.Botones {
+					margin-top: 28px;
+					text-align: center;
+				}
+
+					.Botones a {
+						text-decoration: none;
+					}
+
+					.Delete {
+						margin-right: 20px;
+					}
+
+					.Botones a img {
+						height: 22px;
+						transition: all .3s;
+						width: 22px;
+					}
+
+					.Botones a img:hover {
+						transform: scale(1.2,1.2);
+					}
+
+	.S3{
+		width: 100%;
+	}		
+
+		.S3 div {
+			color: #424242;
+			font-family: Tw Cen MT;
+			font-size: 22px;
+			line-height: 33px;
+			margin: 48px auto;
+			text-align: center;
+			width: 50%;
+		}	
+
+/*Fin Estilos Article*/
+
+/*Estilos Footer*/
+
+footer {
+	background: #222;
+	box-shadow: 0 0 4px 4px grey;
+	height: 100px;
+	width: 100%;
+}
+
+	.Nom {
+		color: #bbb;
+		font-size: 20px;
+		font-family: Tw Cen MT;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+/*Fin Estilos Footer*/
+
+/*Estilos Boton Flotante*/
+
+	.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+	  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	}
+
+	.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
+	  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+	          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn, .btn-large {
+	  background-color: #26a69a;
+	  color: #fff;
+	  cursor: pointer;
+	  letter-spacing: .5px;
+	  -webkit-transition: .2s ease-out;
+	  transition: .2s ease-out;
+	  text-align: center;
+	  text-decoration: none;
+	}
+
+	.btn:hover, .btn-large:hover {
+	  background-color: #00b0dd;
+	}
+
+	.btn-floating {
+	  background-color: #00b0dd;
+	  border-radius: 50%;
+	  color: #fff;
+	  cursor: pointer;
+	  display: inline-block;
+	  height: 40px;
+	  line-height: 40px;
+	  overflow: hidden;
+	  padding: 0;
+	  position: relative;
+	  -webkit-transition: .3s;
+	  transition: .3s;
+	  vertical-align: middle;
+	  width: 40px;
+	  z-index: 1;
+	}
+
+	.btn-floating:hover {
+	  background-color: #00b0dd;
+	}
+
+	.btn-floating:before {
+	  border-radius: 0;
+	}
+
+	.btn-floating.btn-large {
+	  height: 56px;
+	  width: 56px;
+	}
+
+	.btn-floating.btn-large i {
+	  line-height: 56px;
+	}
+
+/*Fin Estilos Boton Flotante*/
+
+/*Estilos Ventana Modal*/
+
+.modal-wrapper {
+   opacity: 0;
+   position: absolute;
+   visibility: hidden;
+}
+ 
+.modal-wrapper:target {
+   background-color: rgba(0,0,0,0.6);
+   bottom: 0;
+   left: 0;
+   margin: 0;
+   opacity: 1;
+   position: fixed;
+   right: 0;
+   top: 0;
+   transition: all .3s;
+   visibility: visible;
+   z-index: 2000;
+}
+
+	.popup-contenedor {
+	   background-color: white;
+	   border: 1px solid #dbdcdf;
+	   bottom: 0;
+	   border-radius: 10px;
+	   height: 430px;
+	   left: 0;
+	   margin: auto;
+	   position: absolute;
+	   right: 0;
+	   top: 0;
+	   width:30%;
+	}
+
+		.Encabezado {
+			background-color: #f4f5f9;
+			border-radius: 10px 10px 0 0;
+			height: 50px;
+			padding-left: 40px;
+			width: 100%;
+		}
+
+			.Titulo2 {
+				color: #4e5056;
+				font-family: TW Cen MT;
+				font-size: 22px;
+				font-weight: 700;
+				margin-top: 12px;
+				position: absolute;
+			}
+	
+			.popup-cerrar {
+			   color: #7c808b;
+			   font-family: TW Cen MT;
+			   font-size: 23px;
+			   font-weight: 700;
+			   margin-top: 11px;
+			   position: absolute;
+			   right: 40px;
+			   text-decoration: none;
+			   transition: all .3s;
+			}
+
+			.popup-cerrar:hover {
+				color: #4e5056;
+			}
+
+			.Container {
+			    padding: 40px 40px 0 40px;
+			    text-align: center;
+			}
+
+			    .titulo {
+		          border-color: black;          
+		          box-shadow: 1px 1px 10px 1px black;
+		          font-family: Tw Cen MT;
+		          font-weight: bold;
+		          font-size: 20px;
+		          font-style: italic;
+		          height: 35px;
+		          padding-left: 10px;
+		          transition: all .5s ease;
+		          width: 100%;
+		        }
+
+		        .titulo:focus {
+		          outline: none;
+		        }	
+
+		        .fecha {
+		          border-color: black;          
+		          box-shadow: 1px 1px 10px 1px black;
+		          font-family: Tw Cen MT;
+		          font-weight: bold;
+		          font-size: 20px;
+		          font-style: italic;
+		          height: 35px;
+		          margin-top: 20px;
+		          padding-left: 10px;
+		          transition: all .5s ease;
+		          width: 100%;
+		        }
+
+		        .fecha:focus {
+		          outline: none;
+		        }	
+
+				input[type="date"]::before { 
+				 	color: #999999; content: attr(placeholder); 
+				} 
+
+				input[type="date"] { 
+					color: #ffffff; 
+				} 
+
+				input[type="date"]:focus, input[type="date"]:valid { 
+					color: black; 
+				} 
+
+				input[type="date"]:focus::before, input[type="date"]:valid::before { 
+					content: "" !important; 
+				}
+
+		        .descripcion {
+		          border: 1.5px solid black;          
+		          box-shadow: 1px 1px 10px 1px black;
+		          font-family: Tw Cen MT;
+		          font-weight: bold;
+		          font-size: 20px;
+		          font-style: italic;
+		          margin-top: 20px;
+		          padding-left: 10px;
+		          resize: none;
+		          transition: all .5s ease;
+		          width: 100%;
+		        }
+
+		        .descripcion:focus {
+		          outline: none;
+		        }	
+
+		        .btn-submit {
+			      background-color: #D5D8DC;
+			      border-color: black;
+			      box-shadow: 1px 1px 10px 1px black;
+			      border-radius: 3px 3px 3px 3px;
+			      cursor: pointer;
+			      font-family: Tw Cen MT;
+			      font-size: 20px;
+			      font-style: italic;
+			      font-weight: bold;
+			      height: 35px;
+			      margin-top: 28px;
+			      transition: all .3s ease;
+			      width: 100%;
+			    }
+
+			    .btn-submit:hover {
+			      background-color: #eceff1;
+			    } 
+
+			    .btn-submit:focus {
+			      outline: none;
+			    }
+
+/*Fin Estilos Ventana Modal*/
+
+

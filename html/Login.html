@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Iniciar sesión</title>
+		<link rel="stylesheet" type="text/css" href="../librerias/css/Login.css">
+		<link rel="stylesheet" type="text/css" href="../librerias/responsive/MediaQueries_Login.css">
+		<link rel="shortcut icon" href="../librerias/imagenes/Logo.png">
+		<link rel="stylesheet" type="text/css" href="../librerias/css/animate.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<div class="Titulo animated2 fadeIn">
+			TIC - Aprendizaje
+		</div>
+		<!--Formulario Login-->
+		<hr class="HR1 animated2 fadeIn" color="black">
+		<div class="Login animated2 fadeIn-1">
+			<form class="Formulario" method="POST" action="../php/Login.php">
+				<div class="Container">
+					<div class="input-group">
+						<input type="text" name="usuario" class="usuario" placeholder="Usuario" autocomplete="off" required />
+					</div>
+					<div class="input-group">
+						<span id="change" class="eye"></span><input type="password" name="password" class="password" id="pass" placeholder="Contraseña" autocomplete="off" required />
+					</div>
+					<input type="submit" class="btn-submit" value="Iniciar sesión" />
+				</div>
+			</form>
+			<div class="Texto">
+				¿No tienes cuenta?
+			</div>
+			<div class="Texto2">
+				<a href="Registro.html">Regístrate</a>
+			</div>
+		</div>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/changeeye.js"></script>
+	</body>
+</html>

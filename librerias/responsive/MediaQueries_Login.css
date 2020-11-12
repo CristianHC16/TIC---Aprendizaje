@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+	@font-face {
+	  font-family: "TW Cen MT";
+	  src: url("../fuentes/Tw Cen MT.woff");
+	}
+
+	body {
+		background-image: url(../imagenes/FondoLogin.jpg);
+  		background-size: 160% 160%;
+  		background-repeat: no-repeat;
+	}
+
+	.Titulo {
+		font-size: 28px;
+		margin-top: 25%;
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+
+	.Login {
+		background-color: rgba(0,0,0,0);
+		height: 48%;
+		width: 91.66666667%;
+		margin-left: 4%;
+		position: relative;
+		top: 0;
+		margin-top: 8%;
+		float: left;
+		box-shadow: 0px 0px 0px black;
+	}
+
+	.Container {
+		padding-top: 8px;
+	}
+
+	.usuario {
+		padding-left: 50px;
+		font-size: 16px;
+		width: 91.66666667%;
+	}
+
+	.usuario:focus {
+        width: 91.66666667%;
+    }
+
+	.password {
+		padding-left: 50px;
+		font-size: 16px;
+		width: 91.66666667%;
+	}
+
+	.password:focus {
+        width: 91.66666667%;
+    }
+
+    #change {
+		top: 33%;
+		right: 8%;
+		float: right;
+    }
+
+	.btn-submit {
+		font-size: 16px;
+		margin-top: 20px;
+		width: 91.66666667%;
+	}
+
+	.Texto {
+		font-size: 17px;
+		color: #fff;
+	}
+
+	.Texto2 {
+		font-size: 18px;
+		position: relative;
+		margin-top: 2%;
+	}
+
+	hr {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+	.Titulo {
+		margin-top: 2%;
+	}
+
+	.Login {
+		margin-top: 1%;
+		height: 70%;
+		position: relative;
+	}
+
+	.Texto3 {
+		font-size: 18px;
+		position: relative;
+		margin-bottom: 4%;
+		margin-top: 3%;
+	}
+
+	#change {
+		float: right;
+    }
+}

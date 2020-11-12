@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+@font-face {
+	font-family: "TW Cen MT";
+	src: url("../fuentes/Tw Cen MT.woff");
+}
+
+body {
+	background: #00b0dd;
+}	
+
+h1 {
+	font-family: TW Cen MT;
+	margin-top: 23%;
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		margin-top: 57%;
+		font-size: 18px;
+	}
+}

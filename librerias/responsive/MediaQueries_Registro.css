@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+	@font-face {
+	  font-family: "TW Cen MT";
+	  src: url("../fuentes/Tw Cen MT.woff");
+	}
+
+	body {
+		background-image: url(../imagenes/FondoRegistro.jpg);
+  		background-size: 360%;
+  		background-repeat: no-repeat;
+	}
+	
+	.Texto {
+	  width: 100%;
+	  margin-left: 0;
+	  margin-top: 0;
+	  position: relative;
+	  float: left;
+	  margin-bottom: 2%;
+	}
+
+	.TextoA {
+      font-size: 24px;
+      margin-left: 4%;
+      margin-top: 4%; 
+      text-align: center; 
+      width: 91.66666667%;
+	  color: black; 
+	  float: left;
+    }
+
+    .TextoB {
+      color: white;
+      font-size: 16px;
+      margin-left: 4%;
+      margin-top: 14%;
+      text-align: center;
+      width: 91.66666667%;
+      color: #222;
+      line-height: 20px;
+      position: relative;
+      float: left;
+    }
+
+	.Registro {
+		background-color: rgba(0,0,0,0);
+		margin-top: 4%;
+		height: 83%;
+		width: 91.66666667%;
+		margin-left: 4%;
+		box-shadow: 0px 0px 0px black;
+		position: relative;
+		float: left;
+	}
+
+	.Container {
+		padding-top: 0px;
+	}
+
+	.usuario {
+		padding-left: 50px;
+		font-size: 16px;
+		width: 91.66666667%;
+	}
+
+	.usuario:focus {
+        width: 91.66666667%;
+    }
+
+    .correo {
+		padding-left: 50px;
+		font-size: 16px;
+		width: 91.66666667%;
+		margin-top: 13px;
+	}
+
+	.correo:focus {
+        width: 91.66666667%;
+    }
+
+	.password {
+		padding-left: 50px;
+		font-size: 16px;
+		width: 91.66666667%;
+		margin-top: 13px;
+	}
+
+	.password:focus {
+        width: 91.66666667%;
+    }
+
+    #change {
+		top: 53%;
+		right: 8%;
+		float: right;
+    }
+
+
+    .btn-submit {
+		font-size: 16px;
+		width: 91.66666667%;
+		margin-top: 20px;
+	}
+
+	.Texto1 {
+		font-size: 17px;
+		color: #fff;
+	}
+
+	.Texto2 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+	.TextoB {
+		position: relative;
+		margin-top: 12%
+	}
+
+	.Registro {
+		margin-top: 18%;
+		height: 120%;
+		position: relative;
+	}
+
+	#change {
+		float: right;
+    }
+}

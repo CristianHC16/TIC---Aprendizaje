@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Regístrate</title>
+		<link rel="stylesheet" type="text/css" href="../librerias/css/Registro.css">
+		<link rel="stylesheet" type="text/css" href="../librerias/responsive/MediaQueries_Registro.css">
+		<link rel="shortcut icon" href="../librerias/imagenes/Logo.png">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../librerias/css/animate.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<div class="Texto animated2 fadeIn-1">
+			<div class="TextoA">
+				Regístrate
+			</div>
+			<div class="TextoB">
+				Crear una cuenta te permitirá fortalecer tus conocimientos, ya que podrás realizar examenes, agregar nuevas tareas, etc. 
+			</div>
+		</div>
+		<!--Formulario Registro-->
+		<div class="Registro animated2 fadeIn-1">
+			<form class="Formulario" action="../php/Registro.php" method="POST" name="Registro" id="Registro">
+				<div class="Container">
+					<div class="input-group">
+						<input type="text" name="usuario" class="usuario" placeholder="Usuario" autocomplete="off" maxlength="12" required  minlength="4" />
+					</div>
+					<div class="input-group">
+						<input type="email" name="correo" class="correo" placeholder="Correo electrónico" autocomplete="off" required />
+					</div>
+					<div class="input-group">
+						<input type="password" name="pass" class="password" id="pass" placeholder="Contraseña" autocomplete="off" minlength="4" required />
+					</div>
+					<div class="input-group">
+						<span id="change" class="eye"></span><input type="password" name="pass2" class="password" id="pass2" autocomplete="off" placeholder="Confirmar contraseña" minlength="4" required />
+					</div>
+					<input type="submit" class="btn-submit" value="Regístrate" id="Enviar" />
+				</div>
+			</form>
+			<div class="Texto1">
+				¿Ya tienes cuenta?
+			</div>
+			<div class="Texto2">
+				<a href="Login.html">Iniciar sesión</a>
+			</div>
+		</div>
+		<!--Fin Formulario Registro-->
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/changeeye.js"></script>
+	</body>
+</html>
